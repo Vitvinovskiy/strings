@@ -5,10 +5,10 @@ currency_symbol = "€"
 currency_format_string = "{symbol} {value}"
 
 # Quantity of a product in stock
-in_stock_format_string = "{quantity} disponibili"
+in_stock_format_string = "{quantity} доступные"
 
 # Copies of a product in cart
-in_cart_format_string = "{quantity} nel carrello"
+in_cart_format_string = "{quantity} в корзину"
 
 # Product information
 product_format_string = "<b>{name}</b>\n" \
@@ -17,83 +17,86 @@ product_format_string = "<b>{name}</b>\n" \
                         "<b>{cart}</b>"
 
 # Order number, displayed in the order info
-order_number = "Order #{id}"
+order_number = "Заказ #{id}"
 
 # Order info string, shown to the admins
 order_format_string = "di {user}\n" \
-                      "Created {date}\n" \
+                      "Созданы {date}\n" \
                       "\n" \
                       "{items}\n" \
                       "TOTAL: <b>{value}</b>\n" \
                       "\n" \
-                      "Customer notes: {notes}\n"
+                      "Примечание клиента: {notes}\n"
 
 # Order info string, shown to the user
-user_order_format_string = "{status_emoji} <b>Ordine {status_text}</b>\n" \
+user_order_format_string = "{status_emoji} <b>Заказ {status_text}</b>\n" \
                            "{items}\n" \
-                           "TOTALE: <b>{value}</b>\n" \
+                           "ВСЕГО: <b>{value}</b>\n" \
                            "\n" \
-                           "Note: {notes}\n"
+                           "Примечание: {notes}\n"
 
 # Transaction page is loading
-loading_transactions = "<i>Loading of ongoing transactions...\n" \
-                       "Wait a few seconds, please.</i>"
+loading_transactions = "<i>Загрузка текущего запроса...\n" \
+                       "Ожидайте пару секунд, пожалуйста .</i>"
 
 # Transactions page
-transactions_page = "Page <b>{page}</b>:\n" \
+transactions_page = "Страница <b>{page}</b>:\n" \
                     "\n" \
                     "{transactions}"
 
 # transactions.csv caption
-csv_caption = "A .csv file has been generated containing all the transactions stored in the bot database.\n" \
-              "You can open this file with other programs, such as LibreOffice Calc, to process" \
+csv_caption = "A .csv Файл был образован в результате всех операций содержащих  all the transactions stored in the bot database.\n" \
+              "Вы можете открыть этот файл с помощью программы ,  LibreOffice Calc, для обработки" \
               "the data."
 
+#!!!!!!!!!!!!!!!!!
 # Conversation: the start command was sent and the bot should welcome the user
-conversation_after_start = "Hello!\n"
+conversation_after_start = "Привет!\n"
 
 # Conversation: to send an inline keyboard you need to send a message with it
-conversation_open_user_menu = "What would you like to do?\n" \
-                              "💰You have <b> {credit} </b> on the portfolio.\n" \
+conversation_open_user_menu = "Что бы вы хотели сделать?\n" \
+                              "💰У вас есть <b> {credit} </b> на вашем счету.\n" \
                               "\n" \
-                              "<i>To select an operation, press a key in the bottom keyboard.\n" \
-                              "If the keyboard has not opened, " \
-                              "you can open it by pressing the button with four squares" \
-                              "in the message bar.</i>"
+                              "<i>Что бы выбрать действие, нажмите клавишу в нижней части клавиатуры.\n" \
+                              "Если клавиатура не открылась, " \
+                              "вы можете открыть её нажатием на символ с четырьмя квадратами" \
+                              "в строке сообщение.</i>"
 
 # Conversation: like above, but for administrators
-conversation_open_admin_menu = "You are a <b> Manager </b> of this store!\n" \
-                               "What would you like to do?\n" \
+conversation_open_admin_menu = "Вы <b> менеджер </b> этого магазина!\n" \
+                               "Что бы вы хотели сделать?\n" \
                                "\n" \
-                               "<i>To select an operation, press a key in the bottom keyboard.\n" \
-                               "If the keyboard has not opened, " \
-                               "you can open it by pressing the button with four squares" \
-                               "in the message bar.</i>"
+                               "<i>Что бы выбрать действие, нажмите клавишу в нижней части клавиатуры.\n" \
+                               "Если клавиатура не открылась, " \
+                               "вы можете открыть её нажатием на символ с четырьмя квадратами" \
+                               "в строке сообщение.</i>"
 
 # Conversation: select a payment method
-conversation_payment_method = "How do you want to add funds to your wallet?"
+conversation_payment_method = "Как вам удобно пополнить ваш счёт?"
 
 # Conversation: select a product to edit
-conversation_admin_select_product = "✏️ What product do you want to change?"
+conversation_admin_select_product = "✏️ Какой товар желаете изменить?"
 
 # Conversation: select a product to delete
-conversation_admin_select_product_to_delete = "❌ What product do you want to delete?"
+conversation_admin_select_product_to_delete = "❌Какой товар желаете убрать?"
 
+
+#!!!!!!!!!!!!!!!!!
 # Conversation: select a user to edit
-conversation_admin_select_user = "Select a user to perform the selected action."
+conversation_admin_select_user = "Выберите пользователя для редактирования."
 
 # Conversation: click below to pay for the purchase
-conversation_cart_actions = "<i>Add products to the cart by scrolling up and pressing the Add button below" \
-                            "the products you want to buy. When you finish, return to this message and" \
-                            "press the Done button.</i>"
+conversation_cart_actions = "<i>Добавьте товары в корзину листая вверх и нажатием Добавить под" \
+                            "товаром ,который вы хотите приобрести. Добавив товары в корзину, вернитесь к этому сообщению и" \
+                            "нажмите Готово .</i>"
 
 # Conversation: confirm the cart contents
-conversation_confirm_cart = "🛒 Your cart contains these products:\n" \
+conversation_confirm_cart = "🛒 В корзине содержится:\n" \
                             "{product_list}" \
                             "Total:<b>{total_cost}</b>\n" \
                             "\n" \
-                            "<i>If you want to proceed, press the Done button below this message.\n" \
-                            "To cancel, press the Cancel button.</i>"
+                            "<i>Если желаете продолжать, нажмите Готово под этим сообщением.\n" \
+                            "Что бы выйти, нажмите Отменить.</i>"
 
 # Conversation: the user activated the live orders mode
 conversation_live_orders_start = "You are in <b> Order Receipt Mode</b>!\n" \
